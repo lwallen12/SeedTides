@@ -4,9 +4,7 @@ using System.Text;
 
 namespace PastTideData.POCOs
 {
-
-    //https://www.site24x7.com/tools/json-to-csharp.html
-    public class Metadata
+    public class WaterMetadata
     {
         public string id { get; set; }
         public string name { get; set; }
@@ -14,20 +12,19 @@ namespace PastTideData.POCOs
         public string lon { get; set; }
 
     }
-    public class Data
+    public class WaterData
     {
         public DateTime t { get; set; }
-        public string s { get; set; }
-        public string d { get; set; }
-        public string dr { get; set; }
-        public string g { get; set; }
+        public string v { get; set; }
         public string f { get; set; }
 
     }
-    public class WindPOCO
+    public class WaterTempPOCO
     {
-        public Metadata metadata { get; set; }
-        public IList<Data> data { get; set; }
+        public WaterMetadata metadata { get; set; }
+        public IList<WaterData> Data { get; set; }
 
     }
+
+
 }
