@@ -60,19 +60,16 @@ namespace PastTideData
             //&datum=MLLW&interval=h
             //&station=8774230&time_zone=GMT&units=english&format=json&application=NOS.COOPS.TAC.WL
 
-            WaterTemperature waterTemperature = new WaterTemperature();
-            waterTemperature.SeedWaterTemp();
-            //waterTemperature.test();
 
-            //waterTemperature.JoinLinqForFun();
+            //This was the POC
+            //WaterTemperature waterTemperature = new WaterTemperature();
+            //waterTemperature.SeedWaterTemp();
 
-
-            //Wind wind = new Wind();
-            //wind.UpdateWindRecords();
+            Wind wind = new Wind();
+            wind.SeedWind();
 
 
-            //DataSeederTides dataSeeder = new DataSeederTides();
-            //dataSeeder.SeedTableVersionTwo();
+
 
         }
     }
